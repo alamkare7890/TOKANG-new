@@ -155,7 +155,7 @@ a:hover{
   background: transparent;
   padding-left: 0;
 }
-.num{
+span.num{
   font-size: 4rem;
   font-weight: 300;
 }
