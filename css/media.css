@@ -332,6 +332,9 @@ html,body{
     width: 120px;
     object-fit: contain;
   }
+  .service-section .image img{
+    height: 450px;
+  } 
   /*===============About===============*/
 
   /*===============Pages===============*/
@@ -352,7 +355,9 @@ html,body{
   .team-section .whole-image{
     margin-bottom: 30px;
   }
-
+  .service-section .image img{
+    height: 380px;
+  }
 
   .footer-section img{
     height: auto;
@@ -399,6 +404,9 @@ html,body{
   }
   .team-section .image{
     margin-bottom: 30px;
+  }
+  .service-section .image img{
+    height: 400px;
   }
   .brand-section .content{
     width: 100%;

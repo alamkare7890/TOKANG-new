@@ -122,4 +122,32 @@ $(document).ready(function () {
 
     })
     
+    /*================Service-slide==============*/
+    $('.service-slide').slick({
+    
+        slidesToScroll: 1,
+        slidesToShow: 2,
+
+        prevArrow: "<button type='button' class='slick-prev'><i class='fas arrow-left'></i></button>",    
+        nextArrow: "<button type='button' class='slick-next'><i class='fas arrow-right'></i></button>",
+        arrows: false,
+        
+        responsive: [
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToScroll: 1,
+                    slidesToShow: 1,
+                
+                }
+            
+            
+            }
+        
+        
+        ]
+        
+    })
+    
+    
 })
