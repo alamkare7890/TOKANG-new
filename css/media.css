@@ -21,7 +21,7 @@
 
   /*===============media-query======*/
 }
-@media only screen and (min-width: 1200px) and (max-width: 1680px) {
+@media only screen and (min-width: 1200px) and (max-width:1680px){
 
   /*==========Common-Classes============*/
 html,body{
@@ -32,51 +32,35 @@ html,body{
 }
 
 .hero-head {
-  font-size: 2.8rem;
+  font-size: 54px;
 }
 
 .hero-light {
-  font-size: 2.8rem;
+  font-size: 54px;
+
 }
 
 .para {
-  font-size: 0.90rem;
   
 }
 
 .heading {
-  font-size: 2.8rem;
+  font-size: 54px;
 }
 
 .title-head {
-  font-size: 0.9rem;
 }
 
 .sub-head {
-  font-size: 1.5rem;
 }
 .small-title{
-  font-size: 0.9rem;
 }
 .sub-title {
-  font-size: 0.9rem;
-}
-
-.all-btn {
-  font-size: 0.85rem;
-  padding: 15px 30px;
-}
-.pro-btn{
-  font-size: 0.85rem;
-  padding: 5px 18px;  
-  margin-right: 15px;
-
 }
 .section{
   padding: 35px 0;
 }
 .name{
-  font-size: 1.5rem;
 }
   /*===============nav============*/
   .navigation .logo {
@@ -126,21 +110,28 @@ html,body{
   font-size: 16px;
 }
 .container-new {
-  max-width: inherit;
+  max-width: ;
 }
 
 .hero-head {
-  font-size: 2.8rem;
+  font-size: 45px;
+  line-height: 45px;
 }
 
 .hero-light {
-  font-size: 2.8rem;
+  font-size: 45px;
+  line-height: 45px;
+
+}
+.heading{
+  font-size: 45px;
+  line-height: 45px;
+
 }
 .bg-panel{
   height: 80px;
 }
 .para {
-  font-size: 1rem;
   -webkit-line-clamp: 3;
   display: -webkit-box;
   overflow: hidden;
@@ -149,29 +140,22 @@ html,body{
 }
 
 .heading {
-  font-size: 2.8rem;
 }
 
 .title-head {
-  font-size: 1rem;
 }
 
 .sub-head {
-  font-size: 1.5rem;
 }
 .small-title{
-  font-size: 1rem;
 }
 .sub-title {
-  font-size: 1rem;
 }
 
 .all-btn {
-  font-size: 0.95rem;
   padding: 15px 30px;
 }
 .pro-btn{
-  font-size: 0.95rem;
   padding: 5px 18px;  
   margin-right: 15px;
 
@@ -180,7 +164,6 @@ html,body{
   padding: 35px 0;
 }
 .name{
-  font-size: 1.5rem;
 }
 
   /*===============nav============*/
@@ -334,7 +317,10 @@ html,body{
   }
   .service-section .image img{
     height: 450px;
-  } 
+  }
+  .footer-image img{
+    height: 500px;
+  }
   /*===============About===============*/
 
   /*===============Pages===============*/
@@ -349,7 +335,67 @@ html,body{
 
   /*===============media-query======*/
 }
+
 @media only screen and (max-width: 991px) {
+/*==========Common-Classes============*/
+.bg-image{
+    min-height: 500px;
+}
+.section{
+  padding: 25px 0;
+}
+.name{
+  font-size: 20px;
+}
+.read-more{
+    font-size: 15px;
+}
+
+.hero-head {
+    font-size: 35px;
+    line-height: 40px;
+}
+.hero-light {
+    font-size: 35px;
+    line-height: 40px;
+}
+.para {
+    font-size: 15px;
+    line-height: 27px;
+}
+.heading{
+    font-size: 35px;
+    line-height: 40px;
+}
+
+.title-head {
+    font-size: 15px;
+    line-height: 16px;
+}
+.sub-head {
+    font-size: 20px;
+    line-height: 28px;
+}
+.small-head{
+  font-size: 14px;
+}
+.small-title{
+  font-size: 14px;
+}
+.sub-title {
+  font-size: 14px;
+}
+
+.title{
+  font-size: 14px;
+}
+.all-btn {
+    font-size: 14px;
+}
+span.num{
+  font-size: 4rem;
+}
+
   /*===============nav============*/
   /*===============heroHome============*/
   .team-section .whole-image{
@@ -379,9 +425,6 @@ html,body{
 @media only screen and (max-width: 768px) {
   /*===============nav============*/
   /*===============heroHome============*/
-  .sub-head{
-    text-align-last: center;
-  }
   .content{
     text-align: center;
     margin: 25px 0;
@@ -455,6 +498,9 @@ html,body{
   .project-section .num{
     display: block;
   }
+  .team-section .content{
+    width: 100%;
+  }
   /*===============About===============*/
 
   /*===============Pages===============*/
@@ -480,7 +526,10 @@ html,body{
     font-size: 1.8rem;
   }
   .sub-head{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+  }
+  .testimonial-section .person{
+    margin: 0 10px;
   }
   /*===============About===============*/
 
