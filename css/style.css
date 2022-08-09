@@ -65,8 +65,8 @@ a:hover{
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #ebb204;
+    padding: 0 ;
     display: inline-block;
-    margin-top: 20px;
 }
 
 .hero-head {
@@ -190,7 +190,11 @@ span.num{
     width: 100%;
     padding: 10px 0;
 }
-
+.btn-black{
+    color: #101010;
+    font-size: 18px;
+    text-transform: uppercase;
+}
 
 
 /*============|Start-Header-Pages|=============*/
@@ -209,7 +213,7 @@ span.num{
 .bg-panel{
     z-index: 99;
     position: fixed;
-    height: 120px;
+    height: 100px;
     width: 100%;
     transition: all 0.4s linear;
 
@@ -385,10 +389,7 @@ ul li a span{
     text-align: right;
 }
 
-.btn-black{
-    color: #101010;
-    font-size: 18px;
-}
+
 /*========Project-section==========*/
 .project-section .content{
     color: #fff;
@@ -872,7 +873,7 @@ ul li a span{
 .footer-section{
     padding: 50px 0  0 0;
     background-color: #101010;
-    margin-top: 100px;
+    margin-top: 50px;
     position: relative;
 }
 .footer-section .contact-num a{
@@ -1009,6 +1010,12 @@ html,body{
   .hero-section .slide-left{
     right: 10px;
   }
+  .service-section .image img{
+    height: 450px;
+  }
+  .footer-image img{
+    height: 500px;
+  }
   /*===============About===============*/
 
   /*===============Pages===============*/
@@ -1016,9 +1023,6 @@ html,body{
   /*===============Portfolio===========*/
 
   /*===============service=============*/
-  .service-section .image img{
-    height: 450px;
-  }
   /*===============Contact=============*/
 
   /*===============Footer-section======*/
@@ -1239,7 +1243,7 @@ html,body{
     height: 450px;
   }
   .footer-image img{
-    height: 500px;
+    height: 450px;
   }
   /*===============About===============*/
 
@@ -1273,19 +1277,22 @@ html,body{
 
 .hero-head {
     font-size: 35px;
-    line-height: 40px;
+    line-height: 35px;
+    margin-bottom: 0;
 }
 .hero-light {
     font-size: 35px;
-    line-height: 40px;
+    line-height: 35px;
+    margin-bottom: 10px;
 }
 .para {
     font-size: 15px;
-    line-height: 27px;
+    line-height: 24px;
 }
 .heading{
     font-size: 35px;
-    line-height: 40px;
+    line-height: 35px;
+    margin: 5px 0;
 }
 
 .title-head {
@@ -1315,7 +1322,15 @@ html,body{
 span.num{
   font-size: 4rem;
 }
+.section-header-lg{
+  width: 75%;
+}
 
+.btn-black{
+    color: #101010;
+    font-size: 14px;
+    text-transform: uppercase;
+}
   /*===============nav============*/
   /*===============heroHome============*/
   .team-section .whole-image{
@@ -1343,24 +1358,21 @@ span.num{
   /*===============media-query======*/
 }
 @media only screen and (max-width: 768px) {
-  /*===============nav============*/
-  /*===============heroHome============*/
-  .content{
+  .section-header-md{
     text-align: center;
-    margin: 25px 0;
-  }
-  .hero-slide .hero-content{
+    margin: 0 auto;
     width: 100%;
   }
-  .service-type-section .content p{
-    padding-top: 0;
+  .heading{
+    line-height: 40px;
   }
-  .service-type-section .benefits{
-    text-align: center;  
-    padding-top: 0;
+  .all-btn{
+    padding: 10px 30px;
   }
-  .service-type-section .content{
-    margin: 0;
+  /*===============nav============*/
+  /*===============heroHome============*/
+  .hero-slide .hero-content{
+    width: 100%;
   }
   .project-section .num{
     font-size: 3rem;
@@ -1371,15 +1383,17 @@ span.num{
   .service-section .image img{
     height: 400px;
   }
-  .brand-section .content{
-    width: 100%;
-  }
   .testimonial-section .person{
     margin: 0 40px;
   }
-  .footer-section{
-    margin-top: 0;
+  .brand-section .content{
+    padding-top: 25px;
+    width: 100%;
   }
+  .brand-section{
+    height: 450px;
+  }
+  
   /*===============About===============*/
 
   /*===============Pages===============*/
@@ -1391,11 +1405,17 @@ span.num{
   /*===============Contact=============*/
 
   /*===============Footer-section======*/
-
+  .footer-section{
+    margin-top: 0;
+  }
   /*===============media-query======*/
 }
 @media only screen and (max-width: 576px) {
   /*===============nav============*/
+  .navigation .logo{
+    width: 100px;
+    height: auto;
+  }
   /*===============heroHome============*/
   .ham-menu{
     width: 50px;
@@ -1404,14 +1424,26 @@ span.num{
   .section{
     padding: 20px 0;
   }
-  .hero-head {
-    font-size: 2.5rem;
+  .hero-head, .hero-light, .heading{
+    font-size: 28px;
+    line-height: 32px;
   }
-
-  .hero-light {
-    font-size: 2.5rem;
+  .sub-head,.name{
+    font-size: 18px;
+    line-height: 20px;
   }
-  
+  .read-more{
+    font-size: 14px;
+  } 
+  .para{
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  .title-head{
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
   .project-section .perform{
     text-align: center;
   }
@@ -1420,7 +1452,11 @@ span.num{
   }
   .team-section .content{
     width: 100%;
+  } 
+  .service-type-section .benefits{
+    padding-top: 15px;
   }
+  
   /*===============About===============*/
 
   /*===============Pages===============*/
@@ -1439,15 +1475,6 @@ span.num{
 @media only screen and (max-width: 480px) {
   /*===============nav============*/
   /*===============heroHome============*/
-  .hero-head{
-    font-size: 1.8rem;
-  }
-  .hero-light{
-    font-size: 1.8rem;
-  }
-  .sub-head{
-    font-size: 1.5rem;
-  }
   .testimonial-section .person{
     margin: 0 10px;
   }
@@ -1466,6 +1493,9 @@ span.num{
   /*===============media-query======*/
 }
 @media only screen and (max-width: 380px) {
+  .heading,.hero-head,.hero-light{
+    font-size: 24px;
+  }
   /*===============nav============*/
   /*===============heroHome============*/
   /*===============About===============*/
