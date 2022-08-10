@@ -35,8 +35,14 @@ a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100%;
-    
+    padding: 250px 0;    
+    min-height: 650px;
+}
+.bg-header{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
 }
 .section{
   padding: 50px 0;
@@ -142,7 +148,9 @@ a:hover{
 .title{
   font-size: 16px;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #101010;
 }
 .all-btn {
     text-transform: uppercase;
@@ -539,11 +547,11 @@ ul li a span{
     min-height: 650px;
     height: 100vh;
     align-items: flex-end;
-    padding-bottom: 100px;
 }
 .head-content{
     width: 50%;
     color: #fff;
+    padding-bottom: 50px;
 }
 .company-words .image img{
     width: 100%;
@@ -559,9 +567,6 @@ ul li a span{
     object-fit: cover; 
     object-position: top;
 
-}
-.overview .perform{
-    padding-bottom: 20px;
 }
 .overview .play-about{
     position: relative;
@@ -587,7 +592,6 @@ ul li a span{
 
 .bg-testi{
     width: 100%;
-    height: 850px;
     background-image: url(../Image/Jpg/bg-home-1.jpg);
     display: flex;
     align-items: center;
@@ -599,9 +603,8 @@ ul li a span{
     padding-top: 15px;
 }
 /**/
-.query-section{
+.query-section{ 
     background-image: url(../Image/Jpg/bg-home-2.jpg);
-    height: 850px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -703,6 +706,8 @@ ul li a span{
 
 }
 .grid-content{
+    text-align: center;
+    padding: 15px 0;
     position: absolute;
     width: 100%;
     height: 100px;
@@ -751,6 +756,28 @@ ul li a span{
     height: 250px;
 }
 */
+/*second*/
+
+.gallery-grid .pg-grid-1{
+  grid-area: 1/1/6/2;
+
+}
+/*=======Built-pages========*/
+.gallery-grid .build-grid-1{
+  grid-area: 1/1/5/2;
+
+}
+.gallery-grid .build-grid-2{
+  grid-area: 1/2/6/3;
+}
+.gallery-grid .build-grid-3{
+  grid-area: 1/3/4/3;
+}
+.gallery-grid .build-grid-4{
+  grid-area: 4/5/9/3;
+}
+
+
 
 .port-gallery .port-nav li a.active{
     border: 0;
@@ -763,106 +790,50 @@ ul li a span{
 
 /*============|End-Service-Pages|=============*/
 
-/*============|Start-about-Pages|=============*/
-.about-hero-section{
-    height: 100vh;    
-    min-height: 650px;
-    width: 100%;
-    background-image: url(../image/Jpg/bg-title-1.jpg);
-} 
-.hero-header{
-    width: 100%;
-    min-height: 650px;
-    height: 100vh;
-    align-items: flex-end;
-    padding-bottom: 100px;
+/*============|Start-Contact-Pages|=============*/
+.contact-hero-section{
+  background-image: url(../image/Jpg/bg-title-1.jpg);
+  height: 100vh;
+  position: relative;
+  
 }
-.head-content{
-    width: 50%;
-    color: #fff;
+.contact-hero-section .about-hero{
+  position: absolute;
+  bottom: 0;
+  color: #fff;
 }
-.company-words .image img{
-    width: 100%;
-    height: 550px;
-    object-fit: contain;
+.located-section li{
+  padding: 15px 0;
 }
-.company-words .content{
-    padding-top: 80px;
+.located-section li .icon{
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ebb204;
+  border-radius: 50%;
+  color: #fff;
 }
-.overview img{
-    height: 750px;
-    width: 100%;
-    object-fit: cover; 
-    object-position: top;
-
+.located-section li a{
+  color: #101010;
 }
-.overview .perform{
-    padding-bottom: 20px;
+.contact-form{
+  background-color: #f8f8f6;
 }
-.overview .play-about{
-    position: relative;
+.contact-form input,textarea{
+  margin: 7px 0;
+  font-size: 16px;
+  border: #e0e0e0;
+  background-color: #fff;
+  padding: 10px;
+  height: 80px;
 }
-.overview .play-btn{
-    position: absolute;
-    left: -50px;
-    top: 25%;
-    justify-content: center;
-    background-image: linear-gradient(45deg, #ebb204 0%, #c89805 100%);
-    padding: 70px 50px;
-    width: 450px;
+.contact-form textarea{
+  margin-bottom: 30px;
 }
 
-.play-btn .play-box i{
-    font-size: 3.5rem;
-    color: #fff;
-    padding-bottom: 30px;
-}
-.overview .play-box h3{
-    color: #fff;
-}
-
-.bg-testi{
-    width: 100%;
-    height: 850px;
-    background-image: url(../Image/Jpg/bg-home-1.jpg);
-    display: flex;
-    align-items: center;
-}
-
-.person-intro{
-    text-align: center;
-    color: #101010;
-    padding-top: 15px;
-}
-/**/
-.query-section{
-    background-image: url(../Image/Jpg/bg-home-2.jpg);
-    height: 850px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-.query-section input, textarea{
-    font-size: 16px;
-    margin-bottom: 20px;
-    border-radius: 0;
-    padding: 15px 10px;
-}
-.query-section textarea{
-    border-radius: 0;
-    height: 180px;
-}
-.contact-query form{
-    margin-top: 40px;
-}
-.contact-query button{
-    border: none;   
-    outline: none;
-
-}
-
-
-/*============|End-about-Pages|=============*/
+/*============|End-Contact-Pages|=============*/
 
 
 
@@ -886,6 +857,7 @@ ul li a span{
 }
 .footer-section a{
     color: #fff;
+    font-size: 18px;
 }
 .footer-section .footer-content{
     padding-top: 30px;
@@ -1016,7 +988,7 @@ html,body{
     height: 500px;
   }
   /*===============About===============*/
-
+  
   /*===============Pages===============*/
 
   /*===============Portfolio===========*/
@@ -1032,10 +1004,6 @@ html,body{
 html,body{
   font-size: 16px;
 }
-.container-new {
-  max-width: ;
-}
-
 .hero-head {
   font-size: 45px;
   line-height: 45px;
@@ -1060,6 +1028,9 @@ html,body{
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
+}
+.bg-image{
+  padding: 150px 0;
 }
 
 .heading {
@@ -1122,7 +1093,7 @@ html,body{
 }
 .ham-menu::after{
   transform: translateY(15px);
-
+ 
 }
 /*.ham-menu.active::before{
   box-shadow: none;
@@ -1245,7 +1216,6 @@ html,body{
     height: 450px;
   }
   /*===============About===============*/
-
   /*===============Pages===============*/
 
   /*===============Portfolio===========*/
@@ -1261,9 +1231,6 @@ html,body{
 
 @media only screen and (max-width: 991px) {
 /*==========Common-Classes============*/
-.bg-image{
-    min-height: 500px;
-}
 .section{
   padding: 25px 0;
 }
@@ -1275,8 +1242,8 @@ html,body{
 }
 
 .hero-head {
-    font-size: 35px;
-    line-height: 35px;
+    font-size: 40px;
+    line-height: 40px;
     margin-bottom: 0;
 }
 .hero-light {
@@ -1342,8 +1309,16 @@ span.num{
   .footer-section img{
     height: auto;
   }
+  .footer-section a{
+    font-size: 14px;
+  }
   /*===============About===============*/
-
+  .person-intro{
+    margin-bottom: 25px;
+  }
+  .head-content{
+    width: 75%;
+  }
   /*===============Pages===============*/
 
   /*===============Portfolio===========*/
@@ -1366,7 +1341,10 @@ span.num{
     line-height: 40px;
   }
   .all-btn{
-    padding: 10px 30px;
+    padding: 12px 30px;
+  }
+  .bg-image{
+    padding: 70px 0;
   }
   /*===============nav============*/
   /*===============heroHome============*/
@@ -1394,7 +1372,19 @@ span.num{
   }
   
   /*===============About===============*/
-
+    .company-words .image img{
+      margin-bottom: 25px;
+    }
+    .overview .play-btn{
+      width: 350px;
+    }
+    .overview img{
+      height: 550px;
+      object-position: right;
+    }
+    .head-content{
+      width: 100%;
+    }
   /*===============Pages===============*/
 
   /*===============Portfolio===========*/
@@ -1455,9 +1445,33 @@ span.num{
   .service-type-section .benefits{
     padding-top: 15px;
   }
-  
+  .para-test{
+    margin: 10px 0 0 0 ;
+  }
   /*===============About===============*/
+    .company-words .image img{
+      height: 450px;
+    }
+    .overview .perform{
+      text-align: center;
+    }
+    .query-section input, textarea {
+      padding: 10px;
+    }
+    .query-section textarea{
+      height: 120px;
+    }
+    .overview .play-btn {
+      width: 180px;
+      padding: 25px 50px;
 
+    }
+    .overview .perform .num{
+      display: block;
+    }
+    .play-btn .play-box i{
+      padding-bottom: 10px;
+    }
   /*===============Pages===============*/
 
   /*===============Portfolio===========*/
@@ -1495,10 +1509,16 @@ span.num{
   .heading,.hero-head,.hero-light{
     font-size: 24px;
   }
+  .section{
+      padding: 15px;
+  }
   /*===============nav============*/
   /*===============heroHome============*/
   /*===============About===============*/
-
+  .company-words .image img{
+    height: 300px;
+    margin: 0;
+  }
   /*===============Pages===============*/
 
   /*===============Portfolio===========*/
