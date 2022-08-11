@@ -803,8 +803,35 @@ ul li a span{
     min-height: 650px;
   }
 /*============|Start-Service-Pages|=============*/
+  .service-gallery .whole-service{
+    position: relative;
+    overflow: hidden;
+    margin: 15px 0;
+  }
 
+  .service-gallery .whole-service img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    transition: all 0.4s linear;
+  }
+  .service-gallery .content{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    bottom: 0;
+    background-color: #1010103d;
+    padding-bottom: 30px;
+    color: #f8f8f6;
+  }
 
+  .service-gallery .whole-service:hover img{
+    transform: scale(1.2);
+  }
 
 /*============|End-Service-Pages|=============*/
 
@@ -1432,7 +1459,9 @@ span.num{
   /*===============Portfolio===========*/
 
   /*===============service=============*/
-
+  .service-gallery .whole-service img{
+    height: 450px;
+  }
   /*===============Contact=============*/
     .location .map-locate{
       height: 450px;
@@ -1488,6 +1517,7 @@ span.num{
   } 
   .service-type-section .benefits{
     padding-top: 15px;
+    text-align: center;
   }
   .para-test{
     margin: 10px 0 0 0 ;
